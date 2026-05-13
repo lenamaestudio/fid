@@ -1,4 +1,6 @@
 # fid
 ### This Repository is for Fundamentals of Interactive Design Class
-Summer 2026
-Student: Johanna Baker
+<p>Summer 2026
+</p>
+<p>Student: Johanna Baker 
+</p>
