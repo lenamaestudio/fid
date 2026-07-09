@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Johanna Baker | Studio</title>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f5efef;
+            color: #333;
+            font-family: "EB Garamond", serif;
+            font-style: italic;
+        }
+
+        h1 {
+            font-family: "EB Garamond", serif;
+            font-optical-sizing: auto;
+            font-weight: 500; 
+            font-style: normal;
+            font-variant-caps: small-caps;
+            letter-spacing: 3px;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 25px;
+            line-height: 1.5;
+            margin-top: 0;
+        }
+        header {
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            padding-right: 7%;
+        }
+        .logo img {
+            width: 500px;
+            height: auto;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            margin: 0;
+            padding: 0px;
+        }
+        nav a {
+            text-decoration: none;
+            color:#333;
+            font-family: "EB Garamond", serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.25rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            opacity: 0.5;
+        }
+        section {
+            padding: 120px 80px;
+        }
+        .hero {
+            padding: 100px 80px;
+        }
+        .hero-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 150px;
+        }
+        .hero-content {
+            width: 65%;
+            line-height: 1.8;
+
+        }
+        .hero-image img {
+            width: 250px;
+            height: auto;
+        }
+        .divider-line {
+            border-top: 1px solid #c2c1c1;
+            width: 1000px;
+            margin: 0 auto 20px auto;
+
+        }
+        .about h2 {
+            font-size: 36px;
+            margin-top: 10px;
+            margin-bottom: 60px;
+        }
+        .about {
+            background-color: #f7f7f7;
+            padding: 100px 70px;
+        }
+    
+        .about-wrapper {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+            margin-bottom: 50px;
+        }
+        .about-img {
+            width: 280px;
+            height: auto;
+            flex-shrink: 0;
+            margin-right: 30px;
+        }
+        .about-content {
+            flex: 1;
+            max-width: 950px;
+            margin: auto 0;
+        }
+        .about-content p {
+            margin-top: 0;
+            font-style: normal;
+            font-size: 18px;
+            text-align: justify;
+            line-height: 1.6;
+        }
+        .drop-caps {
+            font-variant-caps: small-caps;
+            font-style: italic;
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+        .about-content blockquote {
+            margin: 0px;
+            border-left: 2px solid #aeaeae;
+            padding-left: 20px;
+        }
+        .about-quote {
+            font-style: italic;
+            font-size: 20px;
+            margin-top: 20px 10px;
+            text-align: justify;
+        }
+        .about-lists {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding-top: 30px;
+        }
+        .list-column {
+            flex: 1;
+        }
+        .list-column h4 {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-style: italic;
+            font-weight: 600;
+            font-size: 18px;
+            text-align: left;
+            margin-bottom: 18px;
+        }
+        .list-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .list-column li {
+            font-size: 18px;
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+        h2 {
+            margin-top: 0;
+            text-align: center;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            font-family: "EB Garamond", serif;
+            font-weight: 500; 
+            font-style: normal;
+            font-variant-caps: small-caps;
+            letter-spacing: 3px;
+            font-size: 30px;
+        }
+        h3 {
+            margin-top: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            text-align: left;
+            font-family: "EB Garamond", serif;
+            font-weight: 500; 
+            font-style: italic;
+            font-size: 22px;
+        }
+        .featured {
+            background: #ffff; 
+            padding-top: 40px;
+        }
+        .featured blockquote {
+            text-align: center;
+            font-size: 20px;
+        }
+        cite {
+            font-variant-caps: small-caps;
+            font-style: italic;
+            font-size: 18px;
+        }
+        .gallery {
+            padding-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            width: 100%;
+            margin: 0 auto;
+        }
+        .image-box {
+            text-align: center;
+        }
+        .image-box img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: 0.3s;
+        }
+        .image-box p {
+            text-align: left;
+            text-align: justify;
+            font-size: 14px;
+            font-style: normal;
+        }
+        footer {
+            background: #f5efef;
+            padding: 30px 80px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        footer li {
+            margin-bottom: 15px;
+
+        }
+        footer a {
+            text-decoration: none;
+            color:#6b6b6b;
+            font-family: "EB Garamond", serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.15rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        footer a:hover {
+            opacity: 0.5;
+        }
+        .copyright {
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+</head>
+</style>
+</head>
+<body>
+<header class="top">
+    <div class="logo">
+        <img src="images/hand2logo.svg" alt="Johanna Baker Studio">
+    </div>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+    </ul>
+</nav>
+</header>
+
+<section class="hero">
+    <div class="hero-container">
+        <div class="hero-content">
+            <h1>Modern Artistry with a Vintage Soul</h1>
+             <p>Step into the painted reverie of Johanna's studio, where ink, watercolor, and memory intertwine. The artist's work captures the delicate 
+            poise of a bygone era— pressed flowers, moonlit gardens, and quiet pages from an Edwardian field journal. Each illustration is a love letter 
+            to the natural world, rendered with a romantic heart and the soft melancholy of nostalgia.</p>
+        </div>
+             <div class="hero-image">
+             <img src="images/flower ink.svg" alt="">
+            </div>
+    </div>
+   
+</section>
+
+<section class="featured">
+    <div class="featured-container">
+        <h2>Featured Collections</h2>
+        <blockquote>"The poetry of the earth is never dead."<br>
+ <cite>&mdash; John Keats</cite>
+        </blockquote>
+    <div class="gallery">
+        <div class="image-box">
+            <img src="images/Hortensia Green.png">
+            <h3>Hortensia Green &mdash; Wildwood in Pattern</h3>
+            <p>A pattern inspired by the untamed hedgerows and wild gardens that flourish beyond the reach of careful cultivation. Rendered in deep, 
+                verdant green, each motif captures the quiet abundance of leaf and bloom growing exactly as nature intended — dense, tangled, and alive
+                with movement. "Hortensia Green" invites the viewer into a landscape where beauty is found not in order, but in the wild grace of things 
+                left to grow.</p>
+        </div>
+     <div class="image-box">
+            <img src="images/Cecropia_Moth.png">
+            <h3>Entomology &mdash; Study in Fragile Wonder </h3>
+            <p>A study inspired by the meticulous illustrations found in the field journals of nineteenth-century naturalists, where every specimen was rendered 
+                with scientific devotion and quiet reverence. This piece captures the cecropia moth in fine detail — its wings a study in symmetry, pattern, and the 
+                fleeting nature of beauty built to last only a season. "Entomology" invites the viewer to look as the early naturalists did: closely, patiently, and 
+                with wonder.</p>
+        </div>
+     <div class="image-box">
+            <img src="images/botanica.png">
+            <h3>Botanica &mdash; An Ode to the Rooted World</h3>
+            <p>A collection of illustrations devoted to the beauty and order of the rooted world — from delicate wildflowers to towering trees.
+                Inspired by Carolus Linnaeus and his Systema Naturae, these works celebrate the quiet intelligence of earth’s creation. Each piece 
+                invites the viewer to pause and study the elegance of growth, form, and taxonomy — where art and science intertwine.</p>
+        </div>
+     <div class="image-box">
+            <img src="images/hare.png">
+            <h3>Etchings &mdash; Fauna & Flora in Ink</h3>
+            <p>A collection of intricate ink illustrations inspired by the antique etchings found in natural history volumes of centuries past. These works capture 
+                the timeless dialogue between art and observation— where every line reveals the delicate precision of nature’s patterns. Featuring motifs of fauna and 
+                flora, "Etchings" invites the viewer to see through the eyes of early naturalists and illustrators who sought to immortalize the world in ink.</p>
+        </div>
+     <div class="image-box">
+            <img src="images/tea.png">
+            <h3>Wrensong &mdash; A Toast to Small Comforts</h3>
+            <p>A piece inspired by the gentle rituals that punctuate an ordinary day — the pour of tea, the pause before it's taken. A wren rests on the rim of a well-worn
+                cup, as if it, too, had paused to enjoy the quiet. "Wrensong" invites the viewer to slow down, if only for the length of a cup, and find contentment in the 
+                smallness of things.</p>
+        </div>
+     <div class="image-box">
+            <img src="images/rosetta.png">
+            <h3>Midsummer &mdash; In Floribus Veritas</h3>
+            <p>A portrait inspired by the romantic naturalism of pre-Raphaelite painting, where beauty and wildness were never held apart. A crown of peony and wildflower 
+                crowns the subject, worn with the ease of something gathered rather than arranged. "Midsummer" invites the viewer to consider beauty not as artifice, but 
+                as something true, found growing wild in the fullness of the season.</p>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section class="about">
+    <div class="divider-line"></div>
+        <h2>About the Artist</h2>
+    <div class="about-wrapper">
+            <img src="images/sm31ed.png" class="about-img" alt="photograph of Johanna">
+        <div class="about-content">
+            <p><span class="drop-caps">Johanna</span> is an artist, illustrator, and visual storyteller whose work is rooted in a deep appreciation for the quiet poetry of nature,
+             history, and the beauty found in everyday life. Shaped by years spent tending gardens and closely observing the natural world, she creates through watercolor, 
+             digital painting, illustration, and graphic design, capturing fleeting moments with a sense of wonder, curiosity, and thoughtful craftsmanship.</p>
+            <p>Creativity has long been woven into her family's story, nurtured in part by her grandfather, an oil painter whose passion for art inspired her own creative 
+             journey. She holds a Bachelor of Arts in Fashion Design & Merchandising and brings a multidisciplinary background that draws from her experience in visual storytelling 
+             through costume work in film and theatre, textile design, graphic design and fine illustration. These creative threads converge in her work, blending historical 
+             influences, artistic expression, and meticulous attention to detail to create designs and illustrations rich with narrative, texture, and emotion. Influenced from 
+             these experiences across fashion, archival research, and visual communication, Johanna approaches each project as an opportunity to uncover stories, preserve beauty,
+             and create meaningful connections between the past and present.</p>
+            <br>
+            <blockquote class="about-quote">"I am drawn to the stories held within forgotten details—the worn pages of a book, the delicate structure of a flower, the craftsmanship of a garment made by hand. 
+             Through art and design, I seek to preserve these moments of beauty and invite others to see the world with renewed curiosity. Art is a bridge between worlds—a way to preserve the 
+             fleeting, illuminate the overlooked, and give form to stories."</blockquote>
+        </div>
+    </div>
+    <div class="about-lists">
+        <div class="list-column">
+            <h4>Skills</h4>
+            <ul>
+                <li>Watercolor Painting</li>
+                <li>Acrylic Painting</li>
+                <li>Digital Illustration</li>
+                <li>Vector Graphics Creation</li>
+                <li>Textile Design</li>
+                <li>Typography</li>
+                <li>Calligraphy</li>
+                <li>Photo Editing</li>
+                <li>Typeface Design</li>
+                <li>Fashion Illustration</li>
+                <li>Fashion Design</li>
+                <li>Garment Construction</li>
+            </ul>
+        </div>
+
+        <div class="list-column">
+            <h4>Software</h4>
+            <ul>
+                <li>Adobe Suite</li>
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+                <li>InDesign</li>
+                <li>AfterEffects</li>
+                <li>Procreate Software</li>
+                <li>FontForge</li>
+                <li>Canva</li>
+                <li>Adobe Express</li>
+                <li>Microsoft Office</li>
+            </ul>
+        </div>
+
+         <div class="list-column">
+            <h4>Inspiration</h4>
+            <ul>
+                <li>Botanical</li>
+                <li>Natural History</li>
+                <li>Still Life</li>
+                <li>Literature</li>
+                <li>19 <sup>th</sup> Century</li>
+                <li>William Morris</li>
+                <li>Fauna & Flora</li>
+                <li>Antique Books</li>
+                <li>History</li>
+                <li>Ornithology</li>
+                <li>Entomology</li>
+            </ul>
+        </div>
+        
+         <div class="list-column">
+            <h4>Dream Projects</h4>
+            <ul>
+                <li>Textile Collection</li>
+                <li>Book Illustration</li>
+                <li>Homeware Design</li>
+                <li>Wallpaper Collection</li>
+                <li>Children's Storybook</li>
+                <li>Bespoke Fashion House Branding</li>
+                <li>Lifestyle Design</li>
+            </ul>
+        </div>
+
+    </div>
+
+    </div>
+</section>
+
+<footer>
+   <ul>
+    <li><a href="#top">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+   </ul> 
+
+   <ul>
+    <li><a href="https://www.linkedin.com/in/johanna-baker-740035100/" target="_blank">LinkedIn</a></li>
+    <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+    <li><a href="https://www.behance.net/johannaelizabe1" target="_blank">Behance</a></li>
+    <li><a href="https://github.com/lenamaestudio" target="_blank">GitHub</a></li>
+   </ul>
+<p class="copyright"><small>All content copyright&copy; 2026, Johanna Baker</small></p>
+</footer>
+
+</body>
+</html>
