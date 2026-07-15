@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+
+    <style>
+           body {
+            margin: 0;
+            padding: 0;
+            background-color: #f5efef;
+            color: #333;
+            font-family: "EB Garamond", serif;
+            font-style: italic;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-family: "EB Garamond", serif;
+            font-optical-sizing: auto;
+            font-weight: 500; 
+            font-style: normal;
+            font-variant-caps: small-caps;
+            letter-spacing: 3px;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 25px;
+            line-height: 1.5;
+            margin-top: 0;
+        }
+        header {
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 1rem 75px;
+            box-sizing: border-box;
+        }
+        .logo img {
+            width: 500px;
+            height: auto;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            margin: 0;
+            padding: 0px;
+        }
+        nav a {
+            text-decoration: none;
+            color:#333;
+            font-family: "EB Garamond", serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.25rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            opacity: 0.5;
+        }
+        section {
+            width:100%;
+            box-sizing: border-box;
+        }
+        .section-inner {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 80px;
+        }
+
+        .divider-line {
+            border-top: 1px solid #c2c1c1;
+            width: 70%;
+            max-width: 70%;
+            margin: 0 auto 20px auto;
+
+        }
+    
+        .about h2 {
+            font-size: 36px;
+            margin-top: 10px;
+            margin-bottom: 60px;
+        }
+        .about {
+            background-color: #ffff;
+            padding: 100px 0px;
+        }
+    
+        .about-wrapper {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+            margin-bottom: 50px;
+        }
+        .about-img {
+            width: 280px;
+            height: auto;
+            flex-shrink: 0;
+            margin-right: 30px;
+        }
+        .about-content {
+            flex: 1;
+            max-width: 950px;
+            margin: auto 0;
+        }
+        .about-content p {
+            margin-top: 0;
+            font-style: normal;
+            font-size: 18px;
+            text-align: justify;
+            line-height: 1.6;
+        }
+        .drop-caps {
+            font-variant-caps: small-caps;
+            font-style: italic;
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+        .about-content blockquote {
+            margin: 0px;
+            border-left: 2px solid #aeaeae;
+            padding-left: 20px;
+        }
+        .about-quote {
+            font-style: italic;
+            font-size: 20px;
+            margin: 20px 10px;
+            text-align: justify;
+        }
+        .about-lists {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding-top: 30px;
+        }
+        .list-column {
+            flex: 1;
+        }
+        .list-column h3 {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-style: italic;
+            font-weight: 600;
+            font-size: 18px;
+            text-align: left;
+            margin-bottom: 18px;
+        }
+        .list-column ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .list-column li {
+            font-size: 18px;
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+        .title h1 {
+            margin-top: 0;
+            text-align: center;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            font-family: "EB Garamond", serif;
+            font-weight: 500; 
+            font-style: normal;
+            font-variant-caps: small-caps;
+            letter-spacing: 3px;
+            font-size: 30px;
+        }
+        h2 {
+            margin-top: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            text-align: left;
+            font-family: "EB Garamond", serif;
+            font-weight: 500; 
+            font-style: italic;
+            font-size: 22px;
+        }
+        .emblem {
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+            width: 100%;
+        }
+        .emblem img {
+            width: 15%;
+            min-width: 120px;
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background: #f5efef;
+            padding: 30px 80px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        footer li {
+            margin-bottom: 15px;
+
+        }
+        footer a {
+            text-decoration: none;
+            color:#6b6b6b;
+            font-family: "EB Garamond", serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.15rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        footer a:hover {
+            opacity: 0.5;
+        }
+        .copyright {
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+<header class="top">
+    <div class="logo">
+         <a href="index.html"><img src="images/hand2logo.svg" alt="Johanna Baker Studio"></a>
+    </div>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#top">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+    </ul>
+</nav>
+</header>
+
+<section class="about">
+<div class="section-inner">
+    <div class="divider-line"></div>
+        <h1 class="title">About the Artist</h1>
+    <div class="about-wrapper">
+            <img src="images/sm31ed.jpg" class="about-img" alt="photograph of Johanna">
+        <div class="about-content">
+            <p><span class="drop-caps">Johanna</span> is an artist, illustrator, and visual storyteller whose work is rooted in a deep appreciation for the quiet poetry of nature,
+             history, and the beauty found in everyday life. Shaped by years spent tending gardens and closely observing the natural world, she creates through watercolor, 
+             digital painting, illustration, and graphic design, capturing fleeting moments with a sense of wonder, curiosity, and craftsmanship.</p>
+            <p>Creativity has long been woven into her family's story, nurtured in part by her grandfather, an oil painter whose passion for art inspired her own creative 
+             journey. She holds a Bachelor of Arts in Fashion Design & Merchandising and brings a multidisciplinary background that draws from her experience in visual storytelling 
+             through costume work in film and theatre, textile design, graphic design and fine illustration. These creative threads converge in her work, blending historical 
+             influences, artistic expression, and meticulous attention to detail to create designs and illustrations rich with narrative, texture, and emotion. Influenced from 
+             these experiences across fashion, archival research, and visual communication, Johanna approaches each project as an opportunity to uncover stories, preserve beauty,
+             and create meaningful connections between the past and present.</p>
+            <br>
+            <blockquote class="about-quote">"I am drawn to the stories held within forgotten details—the worn pages of a book, the delicate structure of a flower, the craftsmanship of a garment made by hand. 
+             Through art and design, I seek to preserve these moments of beauty and invite others to see the world with renewed curiosity. Art is a bridge between worlds—a way to preserve the 
+             fleeting, illuminate the overlooked, and give form to stories."</blockquote>
+        </div>
+    </div>
+    <div class="about-lists">
+        <div class="list-column">
+            <h2>Skills</h2>
+            <ul>
+                <li>Watercolor Painting</li>
+                <li>Acrylic Painting</li>
+                <li>Digital Illustration</li>
+                <li>Vector Graphics Creation</li>
+                <li>Textile Design</li>
+                <li>Typography</li>
+                <li>Calligraphy</li>
+                <li>Photo Editing</li>
+                <li>Typeface Design</li>
+                <li>Fashion Illustration</li>
+                <li>Fashion Design</li>
+                <li>Garment Construction</li>
+            </ul>
+        </div>
+
+        <div class="list-column">
+            <h2>Software</h2>
+            <ul>
+                <li>Adobe Suite</li>
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+                <li>InDesign</li>
+                <li>AfterEffects</li>
+                <li>Procreate Software</li>
+                <li>FontForge</li>
+                <li>Canva</li>
+                <li>Adobe Express</li>
+                <li>Microsoft Office</li>
+            </ul>
+        </div>
+
+         <div class="list-column">
+            <h2>Inspiration</h2>
+            <ul>
+                <li>Botanical</li>
+                <li>Natural History</li>
+                <li>Still Life</li>
+                <li>Literature</li>
+                <li>19 <sup>th</sup> Century</li>
+                <li>William Morris</li>
+                <li>Fauna & Flora</li>
+                <li>Antique Books</li>
+                <li>History</li>
+                <li>Ornithology</li>
+                <li>Entomology</li>
+            </ul>
+        </div>
+        
+         <div class="list-column">
+            <h2>Dream Projects</h2>
+            <ul>
+                <li>Textile Collection</li>
+                <li>Book Illustration</li>
+                <li>Homeware Design</li>
+                <li>Wallpaper Collection</li>
+                <li>Children's Storybooks</li>
+                <li>Bespoke Fashion House Branding</li>
+                <li>Lifestyle Design</li>
+            </ul>
+        </div>
+                
+    </div>
+    <div class="emblem">
+        <img src="images/flowerink.svg" alt="">
+    </div>
+</div>
+</section>
+
+<footer>
+   <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="#top">About</a></li>
+    <li><a href="portfolio.html">Portfolio</a></li>
+   </ul> 
+
+   <ul>
+    <li><a href="https://www.linkedin.com/in/johanna-baker-740035100/" target="_blank">LinkedIn</a></li>
+    <li><a href="https://www.behance.net/johannaelizabe1" target="_blank">Behance</a></li>
+    <li><a href="https://github.com/lenamaestudio" target="_blank">GitHub</a></li>
+   </ul>
+<p class="copyright"><small>All content copyright&copy; 2026, Johanna Baker</small></p>
+</footer>
+
+
+</body>
+</html>
