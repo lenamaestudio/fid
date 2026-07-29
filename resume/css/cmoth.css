@@ -1,0 +1,123 @@
+ body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffff;
+            color: #333;
+            font-family: "EB Garamond", serif;
+            font-style: italic;
+            overflow-x: hidden;
+        }
+
+         h1 {
+            font-family: "EB Garamond", serif;
+            font-optical-sizing: auto;
+            font-weight: 400; 
+            font-style: normal;
+            font-variant-caps: small-caps;
+            letter-spacing: 5px;
+            font-size: 30px;
+            margin: 0 0 15px 0;
+        }
+
+        header {
+            background-color: #f7f7f7;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 1rem 75px;
+            box-sizing: border-box;
+        }
+        .logo img {
+            width: 500px;
+            height: auto;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            margin: 0;
+            padding: 0px;
+        }
+        nav a {
+            text-decoration: none;
+            color:#333;
+            font-family: "EB Garamond", serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.25rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            opacity: 0.5;
+        }
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #ffff;
+        }
+        .main-image {
+            width: 100%;
+            max-width: 950px;
+            height: auto;
+            display: block;
+            margin-bottom: 15px;
+        }
+        .divider-line {
+            border-top: 2px solid #c2c1c1;
+            width: 50%;
+            max-width: 50%;
+            margin: 20px auto 20px auto;
+
+        }
+        .main-title {
+            margin-top: 0px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            text-align: center;
+            font-family: "EB Garamond", serif;
+            font-weight: 500; 
+            font-style: italic;
+            font-size: 16px;
+            color:#6d6d6d;
+        }
+        footer {
+            background: #f5efef;
+            padding: 30px 80px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        footer li {
+            margin-bottom: 15px;
+
+        }
+        footer a {
+            text-decoration: none;
+            color:#6b6b6b;
+            font-family: "EB Garamond", serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.15rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        footer a:hover {
+            opacity: 0.5;
+        }
+        .copyright {
+            width: 100%;
+            text-align: center;
+            font-size: 18px;
+        }
