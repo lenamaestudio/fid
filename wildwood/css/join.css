@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f9f9f7;
+    font-family: "Montserrat", sans-serif;
+    color: #d3e2d3;
+    line-height: 1.6;
+}
+.join-cover {
+    width: 100%;
+    line-height: 0;
+}
+.join-svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.member-section {
+    position: relative;
+    background-color: #8faa93;
+    padding: 6rem 4rem 8rem 4rem;
+    
+    background-image: 
+        url('../join/flowerstop.svg'), 
+        url('../join/flowersbottom.svg'), 
+        url('../join/leavesleft.svg'), 
+        url('../join/leavesright.svg');
+    
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    
+    background-position: 
+        top center, 
+        bottom center, 
+        bottom left, 
+        bottom right;
+        
+    background-size: 
+        1200px auto, 
+        1100px auto, 
+        auto 730px, 
+        auto 730px;
+}
+
+.member-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.member-heading {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.member-heading h1 {
+    font-family: "EB Garamond", serif;
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-variant-caps: small-caps;
+    color: #d3e2d3;
+    margin-bottom: 1.5rem;
+}
+
+.header-divider {
+    width: 60%;
+    height: 0.75px;
+    background-color: #bfd8c0;
+    margin: 0 auto;
+}
+
+.footer-divider {
+    margin-top: 4rem;
+    width: 45%;
+    height: 1px;
+    background-color: #bfd8c0;
+    margin: 0 auto;
+}
+
+.member-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: start;
+}
+
+.second-tier {
+    font-family: "EB Garamond", serif;
+    font-size: 1.7rem;
+    font-weight: 450;
+    letter-spacing: 2px;
+    font-variant-caps: small-caps;
+    color: #d3e2d3;
+    margin-bottom: 1.4rem;
+}
+.first-tier {
+    font-family: "EB Garamond", serif;
+    font-size: 1.7rem;
+    font-weight: 450;
+    letter-spacing: 2px;
+    font-variant-caps: small-caps;
+    color: #d3e2d3;
+    margin-bottom: 2rem;
+}
+
+.column p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+    color: #d3e2d3;
+    letter-spacing: 0.3px;
+    text-align: justify;
+    font-weight: 500;
+}
+
+.tier {
+    margin-bottom: 2rem;
+}
+
+.tier h3 {
+    font-family: "EB Garamond", serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    font-variant-caps: small-caps;
+    color: #d3e2d3;
+    margin-bottom: 0px;
+}
+
+.tier p {
+    margin-bottom: 0;
+}
+
+@media (max-width: 900px) {
+    .member-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .member-section {
+        padding: 4rem 1.5rem;
+        background-image: url('../join/flowerstop.svg');
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 100% auto;
+    }
+    .member-heading h1 {
+        font-size: 2.3rem;
+        letter-spacing: 1px;
+
+    }
+
+    .second-tier, .first-tier {
+        font-size: 1.6rem;
+        letter-spacing: 1px;
+    }
+    .column p {
+        text-align: left;
+        font-size: 1rem;
+    }
+    .tier p {
+        font-size: 1rem;
+    }
+    .join-cover {
+        width: 100%;
+        height: 220px;
+        overflow: hidden;
+    }
+    .join-svg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+}

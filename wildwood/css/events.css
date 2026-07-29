@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f9f9f7;
+    font-family: "Montserrat", sans-serif;
+    color: #8faa93;
+}
+
+.events-hero {
+    width: 100%;
+    line-height: 0;
+}
+
+.hero-cover-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+.events-content {
+    background-color: #8faa93; 
+    padding: 4rem 2rem 6rem 2rem;
+    position: relative;
+
+    background-image: url('../events/leftflowers.svg'), url('../events/rightflowers.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: left 30px, right 30px;
+    background-size: 320px auto, 320px auto;
+}
+
+.events-title-container {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.events-title-svg {
+    max-width: 420px;
+    width: 100%;
+    height: auto;
+    display: inline-block;
+}
+
+
+.cards-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    align-items: stretch;
+}
+
+.event-card {
+    background-color: #f9f9f7;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.card-image-wrap {
+    width: 100%;
+    height: 240px;
+    overflow: hidden;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+.card-content {
+    padding: 1.8rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.hidden-heading {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.card-content h2 {
+    font-family: "EB Garamond", serif;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    font-variant-caps: all-small-caps;
+    color: #4d6654;
+    margin-bottom: 0.8rem;
+}
+
+.card-content p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #849d88;
+    margin-bottom: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.event-date {
+    font-size: 0.95rem;
+    color: #849d88;
+    margin-top: auto;
+    margin-bottom: 1.5rem !important;
+    font-family: "Montserrat", sans-serif;
+}
+.date-text {
+    font-size: 1.2rem;
+    font-family: "EB Garamond", serif;
+    font-variant-caps: all-small-caps;
+    color: #4d6654;
+    font-weight: 600;
+}
+
+
+.event-button {
+    display: block;
+    width: 100%;
+    background-color: #8faa93;
+    color: #f9f9f7;
+    text-align: center;
+    padding: 0.75rem 0;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: background-color 0.2s ease;
+}
+.event-button a {
+    font-family: sans-serif;
+    font-variant-caps: all-small-caps;
+}
+.event-button:hover {
+    background-color: #74897c;
+}
+
+
+@media (max-width: 992px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+    }
+    .events-content {
+        background-size: 200px auto, 200px auto; 
+        background-image: none;
+    }
+}

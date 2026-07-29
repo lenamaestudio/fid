@@ -1,0 +1,186 @@
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    background-image: url(../images/greenhouse.svg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48%;
+    height: 100%;
+    background-color: rgba(171, 194, 212, 0.61);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 3rem;
+}
+.hero-content {
+    color: #ffffff;
+    max-width: 480px;
+    text-align: left;
+}
+
+.hero-content h1 {
+    font-family: "Libre Baskerville", serif;
+    font-size: 2.3rem;
+    line-height: 1.5;
+    font-weight: 400;
+    margin-bottom: 4rem;
+    color: #ffffff;
+    letter-spacing: 2px;
+    transform: scaleY(1.07);
+}
+.hero-button-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.button {
+    display: inline-block;
+    background-color: #f9f9f7;
+    color: #7e9db9;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    padding: 1.1rem 2.5rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    background-color: #f9f9f7;
+}
+
+.conserv-section {
+    position: relative;
+    background-color: #8faa93;
+    color: #dfeddf;
+    padding: 4rem 3rem;
+    background-image: url(../images/left-leaf.svg), url(../images/right-leaf.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: left bottom, right bottom;
+    background-size: 270px auto, 280px auto;
+}
+.conserv-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 6rem;
+}
+.conserv-left {
+    flex: 1;
+    text-align: left;
+}
+.conserv-left h2 {
+    font-family: "EB Garamond", serif;
+    font-variant-caps: small-caps;
+    font-size: 2rem;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    margin-bottom: 1.2rem;
+    color: #dfeddf;
+}
+.conserv-left p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+    text-align: justify;
+    color:#dfeddf;
+}
+blockquote {
+    font-family: "Meie Script", serif;
+    font-size: 2rem;
+    margin-top: 2rem;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+.conserv-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.conserv-block {
+    margin-bottom: 2rem;
+}
+.conserv-block h3 {
+    font-family: "EB Garamond", serif;
+    font-variant-caps: small-caps;
+    font-size: 2rem;
+    letter-spacing: 1.2px;
+    font-weight: 500;
+    margin-top: 1.3rem;
+    margin-bottom: 1rem;
+    color: #dfeddf;
+}
+.conserv-block p {
+     font-family: "Montserrat", sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color:#dfeddf;
+    margin: 0;
+    text-align: justify;
+}
+
+a {
+    color: inherit;
+    font: inherit;
+    text-decoration: underline;
+}
+
+@media (max-width:900px) {
+    .hero-section {
+        height: 600px;
+        background-position: center;
+    }
+    .hero-overlay {
+        width: 65%;
+        max-width: 400px;
+        height: auto;
+        min-height: 70%;
+        margin: auto;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 2.5rem 2rem;
+        background-color: rgba(171, 194, 212, 0.61);
+        justify-content: center;
+        text-align: center;
+        border-radius: 5px;
+
+    }
+    .hero-content {
+        max-width: 100%;
+        text-align: center;
+    }
+    .hero-content h1 {
+        font-size: 1.4rem; 
+        margin-bottom: 2rem;
+        line-height: 1.4;
+    }
+
+    .hero-button-wrapper {
+        justify-content: center;
+    }
+    .conserv-section {
+        padding: 3rem 1.5rem;
+        background-size: 180px auto, 180px auto;
+    }
+
+    .conserv-container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+}

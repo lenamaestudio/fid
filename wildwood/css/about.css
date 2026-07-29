@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f9f9f7;
+    font-family: "Montserrat", sans-serif;
+    color: #8faa93;
+    line-height: 1.7;
+}
+
+h1, h2 {
+    font-family: "EB Garamond", serif;
+}
+
+.about-main-split {
+    display: flex;
+    width: 100%;
+    min-height: 600px;
+}
+
+.img-col-split {
+    flex: 0 0 45%; 
+}
+
+.main-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.intro-text {
+    flex: 0 0 55%; 
+    background-color: #8faa93; 
+    background-image: url('../about/rightleaf.svg'); 
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 250px auto;
+    display: flex;
+    align-items: center;
+    padding: 5rem 4rem;
+    color: #ccddcc;
+}
+
+.intro-content {
+    max-width: 600px;
+}
+
+.intro-text h1 {
+    font-size: 2.1rem;
+    font-weight: 450;
+    margin-bottom: 2.5rem;
+    color: #daedda;
+    font-variant-caps: all-small-caps;
+    letter-spacing: 3px;
+    padding-left: 2rem;
+}
+
+.intro-text p {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+    color: #ccddcc;
+    letter-spacing: 0.4px;
+    text-align: justify;
+    padding-left: 2rem;
+    font-weight: 500;
+}
+.story-section {
+    padding: 3rem 2rem;
+    position: relative;
+}
+
+.block-1 {
+    background-image: url('../about/leftflower.svg');
+    background-repeat: no-repeat;
+    background-position: left 65%;
+    background-size: 275px auto;
+}
+.block-1 .story-text {
+    padding-right: 2rem;
+}
+
+.block-2 .story-text {
+    padding-left: 2rem;
+}
+
+.story-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.story-text h2 {
+    font-size: 2.1rem;
+    font-weight: 450;
+    letter-spacing: 2px;
+    color: #8faa93;
+    margin-bottom: 1.5rem;
+    font-variant-caps: all-small-caps;
+}
+
+.story-text p {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+    color: #8faa93;
+    font-family: "Montserrat", sans-serif;
+    text-align: justify;
+    letter-spacing: 0.4px;
+    font-weight: 500;
+}
+
+.indent {
+    margin-left: 4rem;
+}
+.story-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+.rounded-img {
+    border-radius: 15px;
+}
+
+em {
+    font-family: "EB Garamond", serif;
+    font-style: italic;
+    font-variant-caps: small-caps;
+    font-size: 1.07rem;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+}
+.about-quote {
+    font-family: "EB Garamond", serif;
+    font-style: italic;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    color: #8faa93;
+    border-left: 2px solid #a6c3ab;
+    padding-left: 1.5rem;
+    margin-top: 2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-variant-caps: small-caps;
+    margin-left: 3rem;
+  
+}
+
+.about-quote span {
+    display: block;
+    font-family: "EB Garamond", serif;
+    font-style: italic;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #8faa93;
+    margin-top: 0.8rem;
+    font-variant-caps: small-caps;
+    font-weight: 500;
+}
+
+.about-footer {
+    position: relative;
+    background-color: #f9f9f7;
+    padding-bottom: 22rem;
+    background-image: url('../about/footerflowers.svg');
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: min(100%, 1830px) auto;
+}
+
+
+@media (max-width: 900px) {
+    .about-main-split {
+        flex-direction: column;
+    }
+    .img-col-split, .intro-text {
+        flex: 1 1 100%;
+    }
+    .story-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .block-2 .story-image {
+        order: -1;
+    }
+    .about-footer {
+        padding-bottom: 12rem;
+        background-size: 800px auto;
+    }
+    .block-1 {
+        background-image: none;
+    }
+    .intro-text {
+        background-image: none;
+    }
+}
