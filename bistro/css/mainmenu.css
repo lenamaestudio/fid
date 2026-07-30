@@ -1,0 +1,142 @@
+body {
+        margin: 0px;
+        padding: 0px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1rem;
+        line-height: 1.6rem;
+        color: #b5c7c9;
+        background-color: #2f4248;   
+    }
+    .content-wrapper {
+         margin: 0 8%;
+ 
+    }
+    .menu-card {
+        background-color: #faf2e4;
+        border-radius: 6px;
+        padding: 40px 50px;
+        margin-top: 50px;
+        margin-bottom: 60px;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    }
+    .menu-card-header {
+        padding: 35px 50px;
+        text-align: center;
+
+    }
+
+    .menu-card h2.main-menu-title {
+        color: #394d51;
+        font-family: "Fraunces", serif;
+        text-align: center;
+        font-size: 2.2rem;
+        font-variant-caps: small-caps;
+        letter-spacing: 3px;
+        font-weight: 500;
+        margin: 0 0 20px 0;
+        border-bottom: 2px solid #d25c30;
+        padding-bottom: 20px;
+    }
+    .menu-card-body {
+        padding: 45px 50px 40px 50px;
+    }
+
+    .menu-grid {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    .menu-column {
+        flex: 1;
+        padding: 0 15px;
+        border-right: 2px solid #d25c30; 
+    }
+
+    .menu-column:last-child {
+        border-right: none; 
+    }
+
+    .menu-column h3 {
+        color: #b84f20; 
+        font-family: "Fraunces", serif;
+        text-align: center;
+        font-size: 1.4rem;
+        font-variant-caps: small-caps;
+        letter-spacing: 1px;
+        font-weight: 600;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    .menu-item {
+        margin-bottom: 28px;
+    }
+
+    .menu-item h4 {
+        color: #b84f20;
+        font-family: "Fraunces", serif;
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin: 0 0 6px 0;
+    }
+
+    .menu-item p {
+        color: #394d51;
+        font-size: 0.96rem;
+        line-height: 1.5;
+        margin: 0;
+        font-weight: 400;
+        text-align: justify;
+    }
+
+    
+    .menu-footer-sect {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+        border-top: 2px solid #869fa3;
+        padding-top: 35px;
+        margin-top: 20px;
+    }
+
+    .menu-footer-block {
+        flex: 1;
+    }
+
+    .menu-footer-block h3 {
+        color: #b84f20;
+        font-family: "Fraunces", serif;
+        text-align: left;
+        font-size: 1.4rem;
+        font-variant-caps: small-caps;
+        letter-spacing: 1px;
+        font-weight: 600;
+        margin-top: 0;
+        margin-bottom: 12px;
+
+    }
+
+    .menu-footer-block p {
+        color: #394d51;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        margin: 0;
+    }
+
+    .menu-footer-block a {
+        color: #394d51;
+        text-decoration: underline;
+        transition: font-weight 0.2s ease;
+    }
+    .menu-footer-block a:hover {
+        font-weight: bold;
+    }
+    h3.right-align-head {
+        text-align: right;
+    }
+    p.right-align {
+        text-align: right;
+    }
+    

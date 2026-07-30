@@ -1,0 +1,114 @@
+body {
+        margin: 0px;
+        padding: 0px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1rem;
+        line-height: 1.6rem;
+        color: #869fa3;
+        background-color: #2f4248;   
+    }
+    .content-wrapper {
+         margin: 0 8%;
+    }
+
+    .contact-container {
+        margin-top: 50px;
+        margin-bottom: 60px;
+    }
+
+    .contact-header {
+        text-align: center;
+        padding-top: 35px;
+        margin-bottom: 50px;
+        border-bottom: 2px solid #62777c;
+        padding-bottom: 20px;
+    }
+
+    .contact-header h2 {
+        color: #efd3a0;
+        font-family: "Fraunces", serif;
+        font-size: 2.3rem;
+        font-variant-caps: small-caps;
+        letter-spacing: 3px;
+        font-weight: 350;
+        margin: 0;
+    }
+
+  
+    .contact-grid {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 60px;
+    }
+
+    .contact-info-column {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        text-align: center;
+    }
+
+    .info-block {
+        margin-bottom: 35px;
+    }
+
+    .info-block h3 {
+        color: #efd3a0;
+        font-family: "Fraunces", serif;
+        font-size: 1.4rem;
+        font-variant-caps: small-caps;
+        letter-spacing: 2px;
+        font-weight: 400;
+        margin: 0 0 10px 0;
+    }
+
+    .info-block p {
+        color: #869fa3;
+        font-size: 1rem;
+        line-height: 1.9;
+        margin: 0;
+        font-weight: 450;
+        letter-spacing: 1.1px;
+    }
+
+    .info-block a {
+        color: #869fa3;
+        text-decoration: underline;
+        font-weight: 450;
+        transition: font-weight 0.2s ease, color 0.2s ease;
+    }
+
+    .info-block a:hover {
+        font-weight: 600;
+        color: #b2d0d3;
+    }
+
+    .map-container {
+        width: 100%;
+        max-width: 500px;
+        margin-top: 15px;
+        margin-bottom: 3rem;
+    }
+
+    .map-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 4px;
+        filter: drop-shadow(0 5px 15px rgba(0,0,0,0.3));
+    }
+
+    .contact-image-column {
+        flex: 0 0 500px;
+        margin-left: -40px;
+    }
+
+    .contact-image-column img {
+        width: 100%;
+        height: auto;
+        display: block;
+        filter: drop-shadow(0 10px 20px rgba(0,0,0,0.3));
+    }
+

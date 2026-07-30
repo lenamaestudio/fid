@@ -1,0 +1,131 @@
+
+ header {
+        background-color: #faf2e4;
+        text-align: center;
+        padding: 12px;
+        margin-bottom: 36px;
+        padding-bottom: 50px;
+        position: relative;
+    }
+    .logo-image {
+        width: 250px;  
+        height: auto;  
+        display: block;
+        margin: 1rem auto 2.5rem auto; 
+    }
+    h1 {
+        color: #2f4248;
+        font-family:"Fraunces", serif;
+        font-weight: 500;
+        font-size: 2.55rem;
+        font-variant-caps: small-caps;
+        letter-spacing: 5px;
+        padding-bottom: 2rem;
+    }
+    .title {
+        margin-top: 15px;
+        margin-bottom: 40px;
+    }
+    nav {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #f4e1b7;
+        height: 50px;
+    }
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        position: relative;
+    }
+    nav li {
+        display: inline-block;
+        height: 100%;
+    }
+
+    nav a {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        padding: 0 1.8rem;
+        color: #2f4248;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 400;
+        font-size: 17px;
+        opacity: 0.7;
+        transition: opacity 0.25s ease;
+        font-family: sans-serif;
+    }
+    nav a:hover {
+        font-weight: 600;
+    }
+    nav li:first-child a {
+        cursor: default;
+    }
+
+.news {
+  cursor: default;
+}
+.news-heading {
+  font-size: 1.7rem;
+  font-variant-caps: small-caps;
+  font-weight: 300;
+}
+a.heading-link {
+    text-decoration: none;
+    color: darkslategray;
+    opacity: 1;
+    transition: opacity 0.25s ease;
+}
+a.heading-link:hover {
+    opacity: 0.7;
+}
+.copyright {
+    text-align: center;
+    font-size: 16px;
+}
+a.article-link {
+    color: darkslategray;
+    opacity: 1;
+    transition: opacity 0.25s ease;
+    font-weight: 600;
+}
+a.article-link:hover {
+    opacity: 0.7;
+}
+body {
+    font: 1.25rem/1.75rem sans-serif;
+    color: darkslategray;
+    background-color: floralwhite;
+    margin: 0;
+}
+p {
+    font-size: 17.5px;
+}
+dl {
+    font-size: 17.5px;
+}
+h2 {
+    margin-bottom: 0.125rem;
+    font-size: 35px;
+   
+}
+.postinfo {
+    font-size: 0.85rem;
+    margin-top: 0rem;
+}
+.main-content {
+    margin: 0 10%;
+}
+.copyright {
+    padding-top: 1.5rem;
+    margin-bottom: 1rem;
+}

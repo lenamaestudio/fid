@@ -1,0 +1,135 @@
+
+	body {
+		font-family: "Lora", serif;
+		background-color: #faf2e4;
+		color: #424242;
+		line-height: 1.75;
+    margin: 0;
+    background-image: url(../summermenu/images/honeycomb.svg);
+    background-position: top center;
+    background-size: 40%;
+    background-color: #f3e9cd;
+    background-attachment: fixed;
+    background-repeat: repeat;
+    min-height: 100vh;
+	}
+  .top-header {
+    background-color: #faf2e4;
+  }
+	html {
+		font-size: 100%;
+	}
+	h2 {
+		font-size: 20px;
+		text-transform: uppercase;
+		letter-spacing: 7px;
+		color:#2f4248;
+    font-weight: 600;
+    margin-bottom: 5px;
+	}
+	dt {
+		font-weight: bold;
+		color: #618c87;
+    text-align: left;
+	}
+  dd {
+    text-align: left;
+  }
+  dl {
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+	strong {
+		font-style: italic;
+	}
+	dt strong {
+		color: #b84f20;
+	}
+  #dessert dl {
+      margin-top: 40px;
+      margin-bottom: 10px;
+  }
+  #info {
+    background-image: url(../summermenu/images/shadowgooseleft.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 170px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+  }
+	#info p {
+		font-weight: 500;
+		font-style: italic;
+    font-variant-caps: all-small-caps;
+		font-size: 19px;
+		letter-spacing: 3px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    line-height: 22px;
+    color:#ad936a;
+    
+	}
+
+  hr {
+    border: none;
+    height: 1px;
+    background-color: #86a7a6;
+    width: 70%;
+    margin: 10px auto 30px auto;
+
+  }
+	.price {
+		font-style: italic;
+		color: gray;
+	}
+	h1, h2, #info {
+		text-align: center;
+	}
+	h2 + p {
+		text-align: center;
+    margin-top: 0;
+	}
+
+  p {
+     font-variant-caps: all-small-caps;
+     font-size: 18px;
+     font-weight: 500;
+     color: #618c87;
+     letter-spacing: 1px;
+  }
+ 
+	.main-content {
+    margin: 0 5%;
+    padding-bottom: 40px;
+
+	}
+	.warning {
+		margin-top: 5px;
+    margin-bottom: 0px;
+		font-size: smaller;
+
+	}
+
+.gallery-heading {
+  font-size: 1.7rem;
+  font-variant-caps: small-caps;
+  font-weight: 300;
+}
+a {
+  color:#b84f20;
+}
+a:hover {
+  font-weight: bold;
+}
+footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+
+}
+footer p {
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
